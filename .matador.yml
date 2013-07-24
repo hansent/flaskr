@@ -1,0 +1,11 @@
+
+build: |
+    pip install -r requirements.txt
+    pip install pytest
+    py.test
+
+run: |
+  pip install -r requirements.txt
+  python flaskr.py           
+
+
