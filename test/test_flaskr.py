@@ -9,6 +9,11 @@
     :license: BSD, see LICENSE for more details.
 """
 import os
+import sys
+test_dir = os.path.dirname(os.path.abspath(__file__))
+project_dir = os.path.dirname(test_dir)
+sys.path.insert(0, project_dir)
+
 import flaskr
 import unittest
 import tempfile
